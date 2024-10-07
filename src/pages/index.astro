@@ -1,0 +1,78 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BarChart from '../components/BarChart.astro';
+import PieChart from '../components/PieChart.astro';
+import Layout from '../layouts/Layout.astro';
+---
+<script src="../js/index.js" type="module"></script>
+<Layout title="Driving Test | Bienvenido">
+	<Header />
+	<main class="font-semibold">
+        <!-- Hero Section -->
+  <section class="bg-blue-500 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Aprende a Conducir de Forma Segura</h2>
+      <p class="text-lg mb-6">Accede a nuestros manuales completos y aprende todas las reglas para convertirte en un conductor responsable.</p>
+      <div class="funciona md:f">
+	  <a href="../../public/MANUAL_DEL_CONDUCTOR.pdf" target="_blank" class="bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300">Manual del Conductor</a>
+	  
+	  <a href="../../public/MANUAL_SEÑALAMIENTO.pdf" target="_blank" class=" bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300">Manual de Señalamiento</a>
+	</div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-8">¿Qué encontrarás en nuestros manuales?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold mb-4">Normas de Tránsito</h3>
+        <p>Aprende todas las normas esenciales para circular de manera correcta y segura en las calles y carreteras.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold mb-4">Señalización Vial</h3>
+        <p>Descubre cómo interpretar las señales de tráfico y actúa con responsabilidad en cada situación.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-bold mb-4">Conducción Defensiva</h3>
+        <p>Consejos y técnicas para evitar accidentes y mantenerte seguro en la carretera en cualquier situación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="manual" class="bg-gray-50 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">La Importancia de Conducir con Responsabilidad</h2>
+      <p class="mb-8">
+        Conducir no solo implica manejar un vehículo, sino también hacerlo de forma segura, respetando las normas de tránsito y 
+        siendo conscientes de los demás en la vía. La buena conducción es clave para prevenir accidentes y proteger la vida de todos 
+        los que compartimos las carreteras. Recuerda, conducir con prudencia y atención salva vidas. ¡Hagamos del camino un lugar más 
+        seguro para todos!
+      </p>
+    </div>
+  </section>
+
+  
+       
+    </main>
+	<style>
+
+		@media (max-width: 768px) {
+			.funciona {
+				display: flex;
+				flex-wrap:wrap;
+				justify-content: center;
+				gap: 1rem;
+			}
+		}
+
+
+
+	</style>
+
+	<Footer />
+</Layout>
+
+
+
